@@ -25,6 +25,7 @@ const VehicleYears = ({ navigation, route }) => {
           <>
             {years.map((year) => (
               <Text
+                key={year.nome}
                 style={{
                   paddingHorizontal: 10,
                   paddingVertical: 20,

@@ -25,9 +25,12 @@ const BrandVehicles = ({ navigation, route }) => {
       >
         {vehicles ? (
           <>
-            <Text>{route.params.brandName}</Text>
+            <Text style={{ fontWeight: "600", fontSize: 30 }}>
+              {route.params.brandName}
+            </Text>
             {vehicles.map((vehicle) => (
               <Text
+                key={vehicle.nome}
                 style={{
                   width: "90%",
                   paddingHorizontal: 10,
